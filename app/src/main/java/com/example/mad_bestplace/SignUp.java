@@ -130,7 +130,10 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                         }
                         else {
                             vali = 1;
-                            Toast.makeText(SignUp.this, "Enter a Valid Email!", Toast.LENGTH_LONG).show();
+                            new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("SignUp Fail")
+                                    .setContentText("Email field Empty!")
+                                    .show();
 
                         }
                         if (phone.length() == 10 && phone.matches("[0-9]+")){
@@ -140,20 +143,35 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                         else{
                             vali =1;
                             Toast.makeText(SignUp.this, "Enter a Valid Phone Number!", Toast.LENGTH_LONG).show();
+                            new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("SignUp Fail")
+                                    .setContentText("Email field Empty!")
+                                    .show();
                         }
                         if (add.length() == 0|| add ==null){
                             vali =1;
                             Toast.makeText(SignUp.this, "Address Field is Empty!", Toast.LENGTH_LONG).show();
+                            new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("SignUp Fail")
+                                    .setContentText("Email field Empty!")
+                                    .show();
                         }
                         if (pass.length() == 0||pass == null ){
                             vali = 1;
                             Toast.makeText(SignUp.this, "Enter a password!", Toast.LENGTH_LONG).show();
+                            new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("SignUp Fail")
+                                    .setContentText(" Enter valid password!")
+                                    .show();
                         }
                         else if (pass.equals(pass1)) {
 
                         }
                         else{
-                            Toast.makeText(SignUp.this, "Enter the Same Password!", Toast.LENGTH_LONG).show();
+                            new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("SignUp Fail")
+                                    .setContentText("Enter same password!")
+                                    .show();
                         }
 
                         if (vali == 0){
