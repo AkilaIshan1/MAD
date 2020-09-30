@@ -142,7 +142,6 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                         }
                         else{
                             vali =1;
-                            Toast.makeText(SignUp.this, "Enter a Valid Phone Number!", Toast.LENGTH_LONG).show();
                             new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
                                     .setTitleText("SignUp Fail")
                                     .setContentText("Email field Empty!")
@@ -150,7 +149,6 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                         }
                         if (add.length() == 0|| add ==null){
                             vali =1;
-                            Toast.makeText(SignUp.this, "Address Field is Empty!", Toast.LENGTH_LONG).show();
                             new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
                                     .setTitleText("SignUp Fail")
                                     .setContentText("Email field Empty!")
@@ -158,7 +156,6 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                         }
                         if (pass.length() == 0||pass == null ){
                             vali = 1;
-                            Toast.makeText(SignUp.this, "Enter a password!", Toast.LENGTH_LONG).show();
                             new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
                                     .setTitleText("SignUp Fail")
                                     .setContentText(" Enter valid password!")
