@@ -263,7 +263,7 @@ public class Add_Shop extends AppCompatActivity
                             vali =1;
                             new SweetAlertDialog(Add_Shop.this, SweetAlertDialog.ERROR_TYPE)
                                     .setTitleText("SignUp Fail")
-                                    .setContentText("Address field Empty!")
+                                    .setContentText("Description field Empty!")
                                     .show();
                         }
                         else{
@@ -291,16 +291,10 @@ public class Add_Shop extends AppCompatActivity
                         else{
                             new SweetAlertDialog(Add_Shop.this, SweetAlertDialog.ERROR_TYPE)
                                     .setTitleText("SignUp Fail")
-                                    .setContentText("Added detail is wrong!")
+                                    .setContentText("Not added shop data!")
                                     .show();
                         }
-                        try {
 
-
-
-                        }catch (Exception e){
-                            e.printStackTrace();
-                        }
                     }
 
 

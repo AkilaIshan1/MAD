@@ -186,7 +186,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                             } else {
                                 new SweetAlertDialog(SignUp.this, SweetAlertDialog.ERROR_TYPE)
                                         .setTitleText("SignUp Fail")
-                                        .setContentText("Some field is Empty!")
+                                        .setContentText("Not added user!")
                                         .show();
                             }
                         }
